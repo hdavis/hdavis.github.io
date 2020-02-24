@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Holly Davis' Portfolio Website">
+  <meta name="author" content="Holly Davis">
+
+  <title>Holly Davis - Data Vizualization Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Custom styles for this template -->
+  <link href="css/custom.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Holly Davis</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Portfolio
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+              <a class="dropdown-item" href="geospatial.html">Geospatial Analysis</a>
+              <a class="dropdown-item" href="data_viz.html">Data Visualization</a>
+              <a class="dropdown-item" href="data_science.html">Data Science</a>
+              <a class="dropdown-item" href="science_comm.html">Science Communication</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <h2 class="mt-4 mb-3">Data Vizualization Projects</h2>
+
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="index.html">Home</a>
+      </li>
+      <li class="breadcrumb-item active">Data Vizualization Projects</li>
+    </ol>
+
+
+    <div class="mb-4" id="accordion" role="tablist" aria-multiselectable="true">
+
+      <div class="card">  <!-- new card - VCS Basics -->
+        <div class="card-header" role="tab" id="headingVCSBasics">
+            <!-- Insert project info -->   
+            <div class="row">
+                <div class="col-md-6">
+                  <a href="#">
+                    <img class="img-fluid mb-3 mb-md-0" src="images/data_viz/vcs_streamlines_700x300.png" alt="">
+                  </a>
+                </div>
+                <div class="col-md-6">
+                  <h3>VCS Basics Tutorial</h3>
+                  <p>This project invovled rewriting a Jupyter Notebook to make it easier for new users to understand.
+                    <br>
+                  </p> 
+                  <p><b>Technologies Used:</b>  Python, Jupyter Notebook, CDAT
+                    <br><b>Data Sources:</b>  CDAT sample data files (the intent is to show how to use VCS on users own data)
+                  </p>
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseVCSBasics" aria-expanded="true" aria-controls="collapseVCSBasics" class="btn btn-sm btn-secondary"><small><strong>More Info</strong></small></a> <small>  (click again to collapse)</small>
+                </div>
+            </div>
+            <!-- /.row -->
+          
+        </div>
+
+        <div id="collapseVCSBasics" class="collapse" role="tabpanel" aria-labelledby="headingVCSBasics">
+          <div class="card-body">
+            <div class="row">   
+                <div class="col-md-6">
+                    <a href="#">
+                        <img class="img-fluid rounded mb-3 mb-md-0" src="images/data_viz/vcs_Jupyter_Notebook_First_Plot_700x660.jpg" alt="">
+                    </a>
+                </div>  
+                <div class="col-md-6">
+                    <p><strong>Jupyter Notebook Snapshot</strong></p>
+                    <p>This Python Jupyter Notebook tutorial provides an overview of the Visualization Control System (VCS) tools that are part of the <a href="https://cdat.llnl.gov/" target="_blank">Community Data Analysis Tools (CDAT)</a> software package created by the Climate Group at Lawrence Livermore National Laboratory (LLNL).</p>
+                    <p>For this particular Notebook, I created detailed “<a href="https://cdat.llnl.gov/Jupyter-notebooks/vcs/VCS_Basics/VCS_Basics.html#Getting-Started" target="_blank">Getting Started</a>” instructions for users unfamiliar with the tools, Jupyter Notebooks or conda, which is used for installing the CDAT software and creating a proper environment to run the CDAT tools.</p>
+                    <p>Please visit the <a href="https://cdat.llnl.gov/Jupyter-notebooks/vcs/VCS_Basics/VCS_Basics.html" target="_blank">VCS Basics</a> page to see the entire Jupyter Notebook.</p>
+                </div>  
+            </div>
+            <hr>
+            <div class="row">   
+                <div class="col-md-6">
+                    <a href="#">
+                        <img class="img-fluid rounded mb-3 mb-md-0" src="images/data_viz/vcs_Jupyter_Notebook_Streamlines_700x630.png" alt="">
+                    </a>
+                </div>  
+                <div class="col-md-6">
+                    <p><strong>Visualizing Wind Flow Via Streamlines</strong></p>
+                    <p>One of VCS’s capabilities is plotting streamlines, which show how wind is flowing over the surface of the earth. In this example, the inputs are the u and v components of the wind from a NetCDF file. The resulting plot shows the monthly mean eastward flowing wind speed in m/s over North America for the 10-year period 1979-1988.</p>
+                    <p>Please visit the <a href="https://cdat.llnl.gov/Jupyter-notebooks/vcs/VCS_Basics/VCS_Basics.html" target="_blank">VCS Basics</a> page to see the entire Jupyter Notebook and additional VCS capabilites.</p>
+                </div>  
+            </div>
+            
+            <!-- end of rows of card content -->
+          </div> <!-- end of card body div -->
+        </div>
+      </div> <!-- END OF CARD - VCS Basics-->
+
+      <div class="card"> <!-- new card - E3SM Native Grid -->
+        <div class="card-header" role="tab" id="headingE3SMgrid">
+            <!-- Insert project info --> 
+            <div class="row">
+                <div class="col-md-6">
+                  <a href="#">
+                    <img class="img-fluid mb-3 mb-md-0" src="images/data_viz/E3SM_Native_Grid-Showing_Grid_CloseUp_700x300.jpg" alt="">
+                  </a>
+                </div>
+                <div class="col-md-6">
+                  <h3>Plotting E3SM's Native Grid</h3>
+                  <p>This Jupyter Notebook illustrates how to plot results from the Energy Exascale Earth System Model (E3SM) on the native grid used by the model for all its calculations.</p>
+                  <p><b>Technologies Used:</b>  Python, Jupyter Notebook, CDAT
+                    <br><b>Data Sources:</b>  CDAT sample data
+                  </p>
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseE3SMgrid" aria-expanded="true" aria-controls="collapseE3SMgrid" class="btn btn-sm btn-secondary"><small><strong>More Info</strong></small></a> <small>  (click again to collapse)</small>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div> <!-- end of card-header -->
+        <div id="collapseE3SMgrid" class="collapse" role="tabpanel" aria-labelledby="headingE3SMgrid">
+            <div class="card-body">
+                <div class="row">   
+                    <div class="col-md-6">
+                        <a href="#">
+                            <img class="img-fluid rounded mb-3 mb-md-0" src="images/data_viz/E3SM_Native_Grid_Data_700x700.jpg" alt="">
+                        </a>
+                    </div>  
+                    <div class="col-md-6">
+                        <p><strong>Plot Data on the Native Grid</strong></p>
+                      <p>The Energy Exascale Earth System Model (E3SM) divides the globe up into rectangular pieces or grid cells. To improve efficiency, the E3SM native grid is not based on latitude or longitude, but uses a single location identifier for each cell. (If desired, the results can be converted or regridded to latitude and longitude values after the results are obtained.)</p>
+                      <p>The advantages of plotting model output on the native E3SM grid include being able to see the results without spending time on regridding the data and eliminating a step where mistakes could possibly enter.</p>
+                      <p>The first image in the Notebook (left) plots surface temperature on E3SM’s native grid. The grid cells of the native grid are not all the same size: some are rectangular and others are square. Additionally, the long axes of the rectangular cells are not all in the same direction: some are longitudinal; others are long in the latitudinal direction. In this first Notebook plot, users can see that the data is plotted on the native grid by looking at Africa, specifically the two darker green rectangles plotted within a lighter green area. Of these two rectangles, one has a long axis pointing toward the poles, the other parallels the equator.</p>
+                    </div>  
+                </div>
+                <hr>
+                <div class="row">   
+                    <div class="col-md-6">
+                        <a href="#">
+                            <img class="img-fluid rounded mb-3 mb-md-0" src="images/data_viz/E3SM_Jupyter_Show_Mesh_700x660.png" alt="">
+                        </a>
+                    </div>  
+                    <div class="col-md-6">
+                        <p><strong>Add Native Grid Mesh</strong></p>
+                        <p>After plotting the data, the Notebook shows how to display the grid lines on top of the data.</p>
+                        <p>To see the entire Jupyter Notebook, visit the <a href="https://cdat.llnl.gov/Jupyter-notebooks/scientific/E3SM_VCS_Native_Grid_Plot/E3SM_VCS_Native_Grid_Plot.html" target="_blank">E3SM VCS Native Grid Plot</a> page.</p>
+                    </div>  
+                </div>
+                <hr>
+                <div class="row">   
+                    <div class="col-md-6">
+                        <a href="#">
+                            <img class="img-fluid rounded mb-3 mb-md-0" src="images/data_viz/E3SM_Native_Grid-Showing_Grid_700x700.jpg" alt="">
+                        </a>
+                    </div>  
+                    <div class="col-md-6">
+                        <p><strong>Close-up of the Native Grid Mesh</strong></p>
+                        <p>In this zoomed-in view of the globe showing the native grid lines, users can see two “corners” in the grid: one over the Middle East and the other over the Atlantic Ocean. The E3SM native grid is a “cube-sphere”, which can be visualized by thinking about a cube, then imagining pumping it full of air like you would a soccer ball to puff out the sides of the cube to make a sphere.</p>
+                        <p>To see the entire Jupyter Notebook visit the <a href="https://cdat.llnl.gov/Jupyter-notebooks/scientific/E3SM_VCS_Native_Grid_Plot/E3SM_VCS_Native_Grid_Plot.html" target="_blank">E3SM VCS Native Grid Plot</a> page.</p>
+                    </div>  
+                </div>
+
+              </div>
+          </div>
+      </div>    <!-- END OF CARD - E3SM Native Grid -->  
+
+      <div class="card">  <!-- new card - Taylor Diagram -->
+        <div class="card-header" role="tab" id="headingTaylor">
+            <!-- Insert project info -->   
+            <div class="row">
+                <div class="col-md-6">
+                  <a href="#">
+                    <img class="img-fluid mb-3 mb-md-0" src="images/data_viz/Taylor_Diagram_700x300.png" alt="">
+                  </a>
+                </div>
+                <div class="col-md-6">
+                  <h3>Taylor Diagram Tutorial</h3>
+                  <p>This Python Jupyter Notebook is a tutorial for creating a Taylor Diagram using CDAT's VCS package. 
+                    <br>
+                  </p> 
+                  <p><b>Technologies Used:</b>  Python, Jupyter Notebook, CDAT
+                    <br><b>Data Sources:</b>  None: realistic data are made-up to illustrate how to create a Taylor Diagram
+                  </p>
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseTaylor" aria-expanded="true" aria-controls="collapseTaylor" class="btn btn-sm btn-secondary"><small><strong>More Info</strong></small></a> <small>  (click again to collapse)</small>
+                </div>
+            </div>
+            <!-- /.row -->
+          
+        </div>
+
+        <div id="collapseTaylor" class="collapse" role="tabpanel" aria-labelledby="headingTaylor">
+          <div class="card-body">
+            <div class="row">   
+                <div class="col-md-6">
+                    <a href="#">
+                        <img class="img-fluid rounded mb-3 mb-md-0" src="images/data_viz/Taylor_Jupyter_Reference_Line_700x600.png" alt="">
+                    </a>
+                </div>  
+                <div class="col-md-6">
+                    <p><strong>Taylor Diagram Basics</strong></p>
+                    <p>Taylor diagrams are graphs designed to visually indicate which of several models of a system, process, or phenomenon is most realistic. The diagram, invented by Karl E. Taylor in 1994 (published in 2001), facilitates comparing different models or tracking changes in performance of a single model as it is modified. The diagram can also be used to quantify the degree of correspondence between modeled and observed behavior. In general, the diagram uses three statistics: the Pearson correlation coefficient, the root-mean-square error (RMSE), and the standard deviation.</p>
+                    <p>Taylor diagrams have been used widely to evaluate models designed to study climate and other aspects of Earth’s environment. (See Wikipedia's <a href="https://en.wikipedia.org/wiki/Taylor_diagram" target="_blank">Taylor Diagram</a> page and <a href="http://onlinelibrary.wiley.com/doi/10.1029/2000JD900719/abstract" target="_blank">Taylor (2001)</a> for details.)</p>
+                    <p>This image shows how to draw a reference line at 1.2 on the diagram to represent the reference data's standard deviation of 1.2.</p>
+                    <p>To view the entire Jupyter Notebook, visit the <a href="https://cdat.llnl.gov/Jupyter-notebooks/vcs/Taylor_Diagrams/Taylor_Diagrams.html" target="_blank">Taylor Diagram Tutorial</a> page.</p>
+              </div>  
+            </div>
+            <hr>
+            <div class="row">   
+                <div class="col-md-6">
+                    <a href="#">
+                        <img class="img-fluid rounded mb-3 mb-md-0" src="images/data_viz/Taylor_Jupyter_Final_Image_700x580.png" alt="">
+                    </a>
+                </div>  
+                <div class="col-md-6">
+                    <p><strong>More Complex Diagram</strong></p>
+                    <p>This diagram includes custom colors and labels, a custom legend, and the contours of an additional measure of skill.</p>
+                    <p>See Figures 10 and 11 of <cite><a href="https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2000JD900719" target="_blank">Taylor 2001: Summarizing multiple aspects of model performance in a single diagram, Journal of Geophysical Research, 106(D7): 7183-7192</a></cite>, for details on the skill function.</p>
+                    <p>To view the entire Jupyter Notebook, visit the <a href="https://cdat.llnl.gov/Jupyter-notebooks/vcs/Taylor_Diagrams/Taylor_Diagrams.html" target="_blank">Taylor Diagram Tutorial</a> page.</p>
+                </div>  
+            </div>
+            <hr>
+            <div class="row">   
+                <div class="col-md-6">
+                    <a href="#">
+                        <img class="img-fluid rounded mb-3 mb-md-0" src="images/data_viz/Taylor_Diagram_700x528.png" alt="">
+                    </a>
+                </div>  
+                <div class="col-md-6">
+                    <p><strong>Close-Up of Complex Diagram</strong></p>
+                    <p>This image provides a zoomed-in view of the previous diagram which is difficult to read in the screen shot of the Notebook page.</p>
+                    <p>To view the entire Jupyter Notebook, visit the <a href="https://cdat.llnl.gov/Jupyter-notebooks/vcs/Taylor_Diagrams/Taylor_Diagrams.html" target="_blank">Taylor Diagram Tutorial</a> page.</p>
+                </div>  
+            </div>
+            
+            <!-- end of rows of card content -->
+          </div> <!-- end of card body div -->
+        </div>
+      </div> <!-- END OF CARD - Taylor Diagram -->
+
+      <div class="card">  <!-- new card - 4D Temperature Anomaly-->
+        <div class="card-header" role="tab" id="heading4DTemp">
+            <!-- Insert project info -->   
+            <div class="row">
+                <div class="col-md-6">
+                  <a href="#">
+                    <img class="img-fluid mb-3 mb-md-0" src="images/data_viz/4D_Jupyter_Animation_700x300.jpg" alt="">
+                  </a>
+                </div>
+                <div class="col-md-6">
+                  <h3>4D Temperature Anomaly Animation</h3>
+                  <p>This Jupyter Notebook illustrates using VCS and DV3D (two CDAT tools) to plot three dimensional air temperature anomaly data through time (the 4th dimension). 
+                    <br>
+                  </p> 
+                  <p><b>Technologies Used:</b> Python, Jupyter Notebook, CDAT
+                    <br><b>Data Sources:</b>  CDAT sample data
+                  </p>
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse4DTemp" aria-expanded="true" aria-controls="collapse4DTemp" class="btn btn-sm btn-secondary"><small><strong>More Info</strong></small></a> <small>  (click again to collapse)</small>
+                </div>
+            </div>
+            <!-- /.row -->
+          
+        </div>
+
+        <div id="collapse4DTemp" class="collapse" role="tabpanel" aria-labelledby="heading4DTemp">
+          <div class="card-body">
+            <div class="row">   
+                <div class="col-md-6">
+                    <a href="#">
+                        <img class="img-fluid rounded mb-3 mb-md-0" src="images/data_viz/4D_Animation_700x422.jpg" alt="">
+                    </a>
+                </div>  
+                <div class="col-md-6">
+                    <p><strong>February Snapshot</strong></p>
+                    <p>The data for this example spans 11 months of air temperature data, one value for each month. Instead of plotting the data outright, it is more meaningful to plot the temperature anomaly: how much each temperature value differs from the mean or average temperature of the dataset.</p>
+                    <p>The <a href="https://cdat.llnl.gov/Jupyter-notebooks/scientific/4D_Air_Temperature_Anomaly_1920x1080/4D_Air_Temp_Anomaly_1920x1080.html" target="_blank">Notebook</a> shows how to create a single 3D temperature anomaly image for each month of data. The month of February 1988 is pictured here.</p>
+                </div>  
+            </div>
+            <hr>
+            <div class="row">   
+                <div class="col-md-6">
+                    <a href="#">
+                        <img class="img-fluid rounded mb-3 mb-md-0" src="images/data_viz/4D_Jupyter_Create_Animation_700x480.jpg" alt="">
+                    </a>
+                </div>  
+                <div class="col-md-6">
+                    <p><strong>3D Animation</strong></p>
+                    <p>Stringing the single monthly images together creates the animation.</p>
+                    <p>To view the animation, see the <a href="https://cdat.llnl.gov/Jupyter-notebooks/scientific/4D_Air_Temperature_Anomaly_1920x1080/4D_Air_Temp_Anomaly_1920x1080.html" target="_blank">4D Air Temperature Anomaly - 1920 x 1080 Size</a> Jupyter Notebook. With only 11 time steps, the movie goes by quickly.</p>
+                </div>  
+            </div>
+            
+            <!-- end of rows of card content -->
+          </div> <!-- end of card body div -->
+        </div>
+      </div> <!-- END OF CARD - 4D Temperature Anomaly -->
+
+      <div class="card"> <!-- new card - Baroclinic Instability Video -->
+        <div class="card-header" role="tab" id="headingBaroclinic">
+            <!-- Insert project info --> 
+            <div class="row">
+                <div class="col-md-6">
+                  <a href="#">
+                    <img class="img-fluid mb-3 mb-md-0" src="images/data_viz/baroclinic_close_up_700x300.jpg" alt="">
+                  </a>
+                </div>
+                <div class="col-md-6">
+                  <h3>Nonhydrostatic Dynamical Core Video</h3>
+                  <p>This example is an animation of an idealized test case for a high-resolution version of the E3SM climate model.</p>
+                  <p><b>Technologies Used:</b>  Adobe Premiere Pro
+                    <br><b>Data Sources:</b>  E3SM high-resolution baroclinic instability test case data
+                  </p>
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseBaroclinic" aria-expanded="true" aria-controls="collapseBaroclinic" class="btn btn-sm btn-secondary"><small><strong>More Info</strong></small></a> <small>  (click again to collapse)</small>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div> <!-- end of card-header -->
+        <div id="collapseBaroclinic" class="collapse" role="tabpanel" aria-labelledby="headingBaroclinic">
+            <div class="card-body">
+                <div class="row">   
+                    <div class="col-md-6">
+                        <a href="#">
+                            <img class="img-fluid rounded mb-3 mb-md-0" src="images/data_viz/baroclinic_500x325.jpg" alt="">
+                        </a>
+                    </div>  
+                    <div class="col-md-6">
+                        <p><strong>Test Case Output</strong></p>
+                      <p>The animation was produced using high-frequency output of the specific humidity field from a moist baroclinic-instability idealized test case. In this test case, a small perturbation to a geostrophically-balanced initial state of the Earth's atmosphere triggers baroclinic instability which grows into chaotic multiscale structures.</p>
+                      <p>Watch the <a href="https://youtu.be/1lkeigus7no" target="_blank">E3SM Nonhydrostatic Dynamical Core Animation</a> video on E3SM's YouTube Channel.</p>
+                      <p>Read the <a href="https://e3sm.org/the-e3sm-nonhydrostatic-dynamical-core/" target="_blank">E3SM Nonhydrostatic Dynamical Core</a> story on the E3SM.org website to learn more about the test case and the context for the video.</p>
+                    </div>  
+                </div>
+                <hr>
+                <div class="row">   
+                    <div class="col-md-6">
+                        <a href="#">
+                            <img class="img-fluid rounded mb-3 mb-md-0" src="images/data_viz/baroclinic_close_up_500x325.jpg" alt="">
+                        </a>
+                    </div>  
+                    <div class="col-md-6">
+                        <p><strong>Close-Up of Eddy Activity</strong></p>
+                        <p>The baroclinic instability is responsible for much of the eddy activity (weather) in Earth’s midlatitudes. The video zoomes in on this eddy activity which is essentially waves of storms moving across the globe.</p>
+                        <p>Watch the <a href="https://youtu.be/1lkeigus7no" target="_blank">E3SM Nonhydrostatic Dynamical Core Animation</a> video on E3SM's YouTube Channel.</p>
+                        <p>Read the <a href="https://e3sm.org/the-e3sm-nonhydrostatic-dynamical-core/" target="_blank">E3SM Nonhydrostatic Dynamical Core</a> story on the E3SM.org website to learn more about the test case and the context for the video.</p>
+                    </div>  
+                </div>
+              
+              </div>
+          </div>
+      </div>    <!-- END OF CARD - Baroclinic Instability Video -->  
+
+    </div>
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Holly Davis 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  
+  <!-- Javascript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
